@@ -1,3 +1,4 @@
+//Michael Bushnell 
 function setup(){
     createCanvas(400,269);
     background(150);
@@ -19,15 +20,15 @@ function setup(){
     fill(133,0,1);
     rect(0,0,400,90);
     //bottom black line
-    strokeWeight(0);
+    strokeWeight(1);
     fill (0,0,0);
     rotate(-.012);
-    rect(0,78,400,3);
+    rect(-2,78,400,3);
     //middle black line 
-    strokeWeight(0);
+    strokeWeight(1);
     fill (0,0,0);
     rotate(-.003);
-    rect(0,57,400,3);
+    rect(-2,57,400,3);
     //black hair curves 
     noFill();
     strokeWeight(2);
@@ -51,10 +52,16 @@ function setup(){
     bezier(401,213,370,220,339,270,350,300);
     strokeWeight(3);
     bezier(364,206,339,212,295,244,300,300);
-
-
-
-
+    strokeWeight(17);
+    bezier(170,300,151,257,186,225,210,211);
+    strokeWeight(3);
+    bezier(100,300,122,237,260,178,284,185);
+    bezier(115,290,137,254,164,234,178,235);
+    bezier(171,242,146,257,156,246,139,271);
+    bezier(153,270,155,260,162,253,167,255);
+    bezier(400,135,395,129,380,130,355,135);
+    bezier(330,120,365,112,373,111,407,118);
+    bezier(349,125,368,116,391,120,403,125);
 }
 function draw() {
     print(mouseX, mouseY);
